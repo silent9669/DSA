@@ -4,11 +4,15 @@
 //
 //  Created by phucdang on 21/5/26.
 //
+#include "main.h"
 
-#include <iostream>
+int main() {
+  const int a = 1;
+  int b = 2;
+  const int *const p = &a;
+  *(int *)p = 0;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return EXIT_SUCCESS;
+  cout << a << " " << *p << " " << *(&a) << " ";
+  *(int **)&p = &b;
+  cout << b << " " << *p;
 }
