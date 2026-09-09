@@ -1,5 +1,3 @@
-# PhucLuyenDSA
+# My repo to track my DSA learning progress
 
 
-HELLLOOOOOO
-HELLLOOOOOO
